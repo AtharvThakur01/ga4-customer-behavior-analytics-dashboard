@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GA4 Customer Behavior Analytics Dashboard</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">G4</span>
+        <div>
+          <strong>Behavior Analytics</strong>
+          <small>GA4 reporting workspace</small>
+        </div>
+      </div>
+      <nav aria-label="Dashboard sections">
+        <a href="#overview" class="active">Overview</a>
+        <a href="#journey">Journey</a>
+        <a href="#events">Events</a>
+        <a href="#insights">Insights</a>
+      </nav>
+      <div class="sidebar-card">
+        <span>Primary conversion</span>
+        <strong>purchase</strong>
+        <small>Tracked from GA4 ecommerce event stream</small>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Google Analytics 4 Dashboard</p>
+          <h1>Customer Behavior Analytics</h1>
+        </div>
+        <div class="filters" aria-label="Dashboard filters">
+          <label>
+            Channel
+            <select id="channelFilter">
+              <option value="all">All channels</option>
+            </select>
+          </label>
+          <label>
+            Segment
+            <select id="segmentFilter">
+              <option value="all">All segments</option>
+            </select>
+          </label>
+        </div>
+      </header>
+
+      <section id="overview" class="kpi-grid" aria-label="Key performance indicators"></section>
+
+      <section class="layout-two" id="journey">
+        <article class="panel wide">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Funnel exploration</p>
+              <h2>Behavior path to conversion</h2>
+            </div>
+            <span id="conversionRate" class="pill"></span>
+          </div>
+          <div id="funnel" class="funnel"></div>
+        </article>
+
+        <article class="panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Audience quality</p>
+              <h2>Engagement by segment</h2>
+            </div>
+          </div>
+          <div id="segments" class="segment-list"></div>
+        </article>
+      </section>
+
+      <section class="layout-two" id="events">
+        <article class="panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Event tracking</p>
+              <h2>Top GA4 events</h2>
+            </div>
+          </div>
+          <div id="eventsList" class="event-list"></div>
+        </article>
+
+        <article class="panel wide">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Channel reporting</p>
+              <h2>Revenue and conversion mix</h2>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Channel</th>
+                  <th>Users</th>
+                  <th>Conversions</th>
+                  <th>Revenue</th>
+                  <th>Conv. rate</th>
+                </tr>
+              </thead>
+              <tbody id="channelTable"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel" id="insights">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Stakeholder insights</p>
+            <h2>Recommended actions</h2>
+          </div>
+        </div>
+        <div id="insightGrid" class="insight-grid"></div>
+      </section>
+    </main>
+
+    <script src="src/app.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+date,channel,segment,event_name,users,event_count,conversions,revenue
+2026-04-01,Organic Search,New users,page_view,18420,52100,0,0
+2026-04-01,Organic Search,New users,add_to_cart,18420,2060,0,0
+2026-04-01,Organic Search,New users,begin_checkout,18420,1220,0,0
+2026-04-01,Organic Search,New users,purchase,18420,645,645,84250
+2026-04-01,Paid Search,Returning users,purchase,10180,590,590,76670
+2026-04-01,Email,Loyal customers,purchase,7260,721,721,94230
+2026-04-01,Paid Social,New users,purchase,12740,276,276,33880
+2026-04-01,Referral,High intent,purchase,4860,254,254,32120
+2026-04-01,Direct,Returning users,purchase,9340,438,438,55190
