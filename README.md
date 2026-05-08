@@ -29,10 +29,6 @@ Open `index.html` in a browser. No build step is required.
 └── index.html
 ```
 
-## ATS Keywords Covered
-
-Google Analytics 4, GA4, Looker Studio, reporting, dashboards, event tracking, conversion tracking, funnel analysis, ecommerce analytics, digital analytics, stakeholder insights, QA, data visualization.
-
 ## Business Scenario
 
 An ecommerce product team needs a weekly analytics view that connects acquisition quality, event instrumentation, checkout behavior, and revenue outcomes. This dashboard turns GA4-style data into decisions that product managers and marketing stakeholders can act on.
